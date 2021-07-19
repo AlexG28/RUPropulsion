@@ -39,3 +39,57 @@
     color: black;
     transition: 0.2s;
 }
+
+.menu-bars{
+    display: none;
+}
+
+@media screen and (max-width: 1180px) {
+    .NavbarItems{
+        position: relative;
+    }
+
+    .nav-menu{
+        display:flex;
+        flex-direction: column;
+        width: 30%;
+        height: 600px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background-color: green;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 2rem;
+        width: 50%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        background-color: pink;
+        border-radius: 0;
+    }
+
+    .menu-bars{
+        color: white;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+
