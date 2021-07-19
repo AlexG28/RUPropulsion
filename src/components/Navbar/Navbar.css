@@ -16,12 +16,26 @@
     cursor: pointer;
 }
 
-.menu-bars{
-    position: absolute;
-    width: 74px;
-    height: 40px;
-    left: 1787px;
-    top: 78px;
 
 
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 1.7rem;
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover{
+    color: black;
+    transition: 0.2s;
 }

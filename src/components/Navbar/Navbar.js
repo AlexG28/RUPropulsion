@@ -8,11 +8,9 @@ import './Navbar.css';
 
 //https://www.youtube.com/watch?v=fL8cFqhTHwA
 class Navbar extends Component {
-    state = { clicked: false }
+    
 
-    handleClick = () => {
-        this.setState({clicked: !this.setState.clicked})
-    } // https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
+    // https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
 
     render() { 
         return(
@@ -23,16 +21,13 @@ class Navbar extends Component {
                     <img src="https://img.icons8.com/color/48/000000/rocket--v1.png"/>
                 </div> 
                
-                <div className="menu-bars" onClick={this.handleClick}>
-                    <i className={this.state.clicked}></i>
-                    <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/>
-                </div>
                 
-                <ul>
+                
+                <ul className='nav-menu'>
                     {MenuItems.map((item, index) => {
                         return (
                             <li>
-                                <a className={item.className} href={item.url}>
+                                <a className={item.cName} href={item.url}>
                                     {item.title}
                                 </a>
                             </li>
