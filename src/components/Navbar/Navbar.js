@@ -22,9 +22,9 @@ function Navbar () {
     //fix all of this 
 
     const currentIcon = (b) => {return b ? <AiOutlineClose /> : <HiOutlineMenu />}
-    
+    // <nav className = "navbarItems">
     return(
-        <nav className="NavbarItems">
+        <nav className={ sidebar ? "NavbarItems" : "NavbarItems active"}>
         
             <h1 className="navbar-text">Ryerson Propulsion Group</h1>
             
