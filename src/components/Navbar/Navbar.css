@@ -71,20 +71,6 @@
         opacity: 1;
         transition: all 0.5s ease;
     }
-    /*
-    
-    .nav-links{
-        text-align: center;
-        padding: 2rem;
-        width: 50%;
-        display: table;
-    }
-
-    .nav-links:hover{
-        background-color: pink;
-        border-radius: 0;
-    }
-    */
 
     .menu-bars{
         color: white;
@@ -95,10 +81,6 @@
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-    }
-
-    span {
-        margin-right: 16px;
     }
 }
 

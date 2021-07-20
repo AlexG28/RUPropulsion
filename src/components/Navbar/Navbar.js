@@ -22,29 +22,28 @@ function Navbar () {
     //fix all of this 
 
     const currentIcon = (b) => {return b ? <AiOutlineClose /> : <HiOutlineMenu />}
-    // <nav className = "navbarItems">
+    
     return(
-        <nav className={ sidebar ? "NavbarItems" : "NavbarItems active"}>
-        
+        <div className="mainNavigationBar">
             <h1 className="navbar-text">Ryerson Propulsion Group</h1>
-            
-            <div className="navbar-icon">
-                <img src="https://img.icons8.com/color/48/000000/rocket--v1.png"/>
-            </div> 
             
             <div className="menu-bars" onClick={showSidebar}>
                 {currentIcon(sidebar)}
             </div>
+        
+            <nav className={ sidebar ? "NavbarItems" : "NavbarItems active"}>
             
-            <ul className='nav-menu'>
-                <li><NavLink className='nav-links' to='/'>Home</NavLink></li>
-                <li><NavLink className='nav-links' to='/TheTeam'>The Team</NavLink></li>
-                <li><NavLink className='nav-links' to='/Mission'>Mission</NavLink></li>
-                <li><NavLink className='nav-links' to='/Events'>Events</NavLink></li>
-                <li><NavLink className='nav-links' to='/Blog'>Blog</NavLink></li>
-                <li><NavLink className='nav-links' to='/ContactUs'>Contact Us</NavLink></li>
-            </ul>
-        </nav>
+                
+                <ul className='nav-menu' onClick={showSidebar}>
+                    <li><NavLink className='nav-links' to='/'>Home</NavLink></li>
+                    <li><NavLink className='nav-links' to='/TheTeam'>The Team</NavLink></li>
+                    <li><NavLink className='nav-links' to='/Mission'>Mission</NavLink></li>
+                    <li><NavLink className='nav-links' to='/Events'>Events</NavLink></li>
+                    <li><NavLink className='nav-links' to='/Blog'>Blog</NavLink></li>
+                    <li><NavLink className='nav-links' to='/ContactUs'>Contact Us</NavLink></li>
+                </ul>
+            </nav>
+        </div>
     )
 }
 
