@@ -16,25 +16,19 @@ import { NavLink } from 'react-router-dom';
 // to stop reloading whole page use Link
 
 function Navbar () {
+
     const [sidebar, setSidebar] = useState(false);
-
-    const showSidebar = () => setSidebar(!sidebar);
-    //fix all of this 
-
+    const showSidebar = () => setSidebar(!sidebar); 
     const currentIcon = (b) => {return b ? <AiOutlineClose /> : <HiOutlineMenu />}
     
     return(
-        <div className="mainNavigationBar">
-            <h1 className="navbar-text">Ryerson Propulsion Group</h1>
+        <div className="navbar">
+
+            <h1 className="navbar-title">Ryerson Propulsion Group</h1>
             
-            <div className="menu-bars" onClick={showSidebar}>
-                {currentIcon(sidebar)}
-            </div>
         
-            <nav className={ sidebar ? "NavbarItems" : "NavbarItems active"}>
-            
-                
-                <ul className='nav-menu' onClick={showSidebar}>
+            <nav className={ sidebar ? "navbar-items" : "navbar-items active"}>
+                <ul className='navbar-menu' onClick={showSidebar}>
                     <li><NavLink className='nav-links' to='/'>Home</NavLink></li>
                     <li><NavLink className='nav-links' to='/TheTeam'>The Team</NavLink></li>
                     <li><NavLink className='nav-links' to='/Mission'>Mission</NavLink></li>
@@ -43,6 +37,10 @@ function Navbar () {
                     <li><NavLink className='nav-links' to='/ContactUs'>Contact Us</NavLink></li>
                 </ul>
             </nav>
+        
+            <div className="navbar-bars" onClick={showSidebar}>
+                {currentIcon(sidebar)}
+            </div>
         </div>
     )
 }
