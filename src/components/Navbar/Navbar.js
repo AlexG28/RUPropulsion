@@ -8,12 +8,7 @@ import { NavLink } from 'react-router-dom';
     - Naming is really messed up
 */
 
-// https://www.youtube.com/watch?v=fL8cFqhTHwA
-// https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
-// https://github.com/briancodex/react-sidebar-v1
-
-
-// to stop reloading whole page use Link
+// https://github.com/briancodex/react-sidebar-v1/tree/master/src/components
 
 function Navbar () {
 
@@ -27,7 +22,7 @@ function Navbar () {
             <h1 className="navbar-title">Ryerson Propulsion Group</h1>
             
         
-            <nav className={ sidebar ? "navbar-items" : "navbar-items active"}>
+            <nav className={ sidebar ? "navbar-items active" : "navbar-items"}>
                 <ul className='navbar-menu' onClick={showSidebar}>
                     <li><NavLink className='nav-links' to='/'>Home</NavLink></li>
                     <li><NavLink className='nav-links' to='/TheTeam'>The Team</NavLink></li>

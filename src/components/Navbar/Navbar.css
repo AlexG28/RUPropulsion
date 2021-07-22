@@ -2,14 +2,13 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    min-height: 6vh;
+    height: 80px;
     background: linear-gradient(356deg, rgba(131,58,180,1) 11%, rgba(255,40,40,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 .navbar-title{
     color: white;
     font-size: 35px;
-    justify-self: start;
     margin-left: 2vw;
     box-sizing: content-box;
     margin-right: 5vw;
@@ -47,50 +46,30 @@
 }
 
 @media screen and (max-width: 1400px){
-    .navbar{
-        position: relative;
-    }
     .navbar-bars{
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 1.8rem;
-
-        padding-top: 30px;
-        padding-right: 30px;
+        display: flex;
+        font-size: 35px;
     }
 
     .navbar-menu{
         display: none;
-        flex-direction: column;
-        width: 100%;
+    }
+
+    .navbar-items {
+        background-color: purple;
+        width: 250px;
         height: 600px;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        position: fixed;
         top: 80px;
-        right: -100%;
-        opacity: 1;
-        transition: all 0.5s ease;
+        right: -250px;
+        transition: 850ms;
     }
-
-    .navbar-menu.active{
-        background-color: #6668f4;
-        left: 0;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
+      
+    .navbar-items.active {
+        right: 0;
+        transition: 350ms;
     }
-
-    .nav-links{
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    .nav-links:hover{
-        color: black;
-    }
-
     
 }
