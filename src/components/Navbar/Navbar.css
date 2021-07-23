@@ -20,10 +20,11 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    justify-content: end;
+    justify-content: start;
     color: white;
     width: 40vw;
     margin-right: 2rem;
+    
 }
 
 
@@ -57,19 +58,39 @@
 
     .navbar-items {
         background-color: purple;
-        width: 250px;
+        width: 350px;
         height: 600px;
         display: flex;
         justify-content: center;
         position: fixed;
         top: 80px;
-        right: -250px;
-        transition: 850ms;
+        right: -350px;
+        transition: 350ms ease-in-out;
     }
       
     .navbar-items.active {
         right: 0;
-        transition: 350ms;
+        transition: 350ms ease-in-out;
+    }
+
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+
+        
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links{
+        padding-top: 10px;
+    }
+
+    .nav-links:hover{
+       color: black;
+       background-color: none;
+       transition: 0.3s;
+       border-radius: none;
     }
     
 }
