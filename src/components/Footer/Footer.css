@@ -1,5 +1,8 @@
 .footer-panel{
     background-color: blueviolet;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 .footer-socialIcons a{

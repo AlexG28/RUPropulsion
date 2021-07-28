@@ -11,6 +11,14 @@ export default function Footer() {
                 <a href='https://www.linkedin.com/company/rupropulsion/mycompany/' target='_blank' rel="noreferrer"> <AiOutlineLinkedin /> </a>
                 <a href='https://www.instagram.com/rupropulsion/?hl=en' target='_blank' rel="noreferrer"> <AiOutlineTwitter /> </a>
             </div>
+            
+            <div className='credit'>
+                <h3>By Alex, Carole and Arib</h3>
+            </div>
+            
+            <div className='newletter'>
+                <h3>join our newletter</h3>
+            </div>
         </div>
     )
 }
