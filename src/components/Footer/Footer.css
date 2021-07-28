@@ -1,0 +1,10 @@
+.footer-panel{
+    background-color: blueviolet;
+}
+
+.footer-socialIcons a{
+    
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+}
