@@ -1,6 +1,7 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar/Navbar';
 
 import Home from './pages/Home';
 import Mission from './pages/Mission';
@@ -9,9 +10,11 @@ import TheTeam from './pages/TheTeam';
 import ContactUs from './pages/ContactUs';
 import Blog from './pages/Blog';
 
+import Footer from './components/Footer/Footer';
+
 // footer will go under </Router>
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Router>
@@ -24,6 +27,7 @@ function App() {
           <Route path = '/Blog' exact component ={Blog} />
           <Route path = '/ContactUs' exact component ={ContactUs} />
         </Switch>
+        <Footer />
       </Router>
     </div>
 
@@ -31,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+

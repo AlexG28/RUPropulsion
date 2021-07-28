@@ -4,13 +4,13 @@ import { HiOutlineMenu } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { NavLink } from 'react-router-dom';
 /* TODO:
-    - not sure about the icon, should probably remove it 
-    - Naming is really messed up
+    -add social media icons on the hamburger menu
+    -
 */
 
 // https://github.com/briancodex/react-sidebar-v1/tree/master/src/components
 
-function Navbar () {
+export default function Navbar () {
 
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar); 
@@ -40,4 +40,3 @@ function Navbar () {
     )
 }
 
-export default Navbar;
