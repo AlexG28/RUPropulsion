@@ -21,7 +21,6 @@ export default function Navbar () {
 
             <h1 className="navbar-title">Ryerson Propulsion Group</h1>
             
-        
             <nav className={ sidebar ? "navbar-items active" : "navbar-items"}>
                 <ul className='navbar-menu' onClick={showSidebar}>
                     <li><NavLink className='nav-links' to='/'>Home</NavLink></li>
