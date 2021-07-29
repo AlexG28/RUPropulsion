@@ -16,8 +16,8 @@ export default function Footer() {
                 <h3>By Alex, Carole and Arib</h3>
             </div>
             
-            <div className='newletter'>
-                <h3>join our newletter</h3>
+            <div className='newsletter'>
+                <h3>join our newsletter</h3>
             </div>
         </div>
     )

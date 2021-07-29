@@ -1,13 +1,28 @@
 .footer-panel{
-    background-color: blueviolet;
+    background: linear-gradient(356deg, rgba(180,58,179,1) 23%, rgba(40,207,255,1) 62%);
     align-items: center;
     justify-content: space-between;
     display: flex;
+    height: 80px;
+    position:fixed;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+.footer-socialIcons{
+    margin-left: 4vw;
+    display: flex;
+    gap: 2%;
 }
 
 .footer-socialIcons a{
     
-    display: inline-block;
+    display: flex;
     color: white;
     font-size: 50px;
+}
+
+.newsletter{
+    margin-right: 4vw;
 }
