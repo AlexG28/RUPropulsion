@@ -1,6 +1,5 @@
 .footer-panel{
-    
-    background-color: blue;
+    background: linear-gradient(333deg, rgba(138,210,108,0.90238093528427) 23%, rgba(217,140,122,0.8855742125951943) 71%);
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -33,15 +32,40 @@
 }
 
 .footer-rights{
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 7px;
+    margin-top: 17px;
 }
 
 .credit{
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .footer-newsletter{
     margin-right: 4vw;
 }
+
+.newsletter-text{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-panel{
+        display: flex;
+        flex-direction: column;
+        height: 170px;
+    }
+
+    .footer-socialIcons{
+        margin-left: 0;
+    }
+
+    .footer-newsletter{
+        margin-right: 0;
+        margin-bottom: 17px;
+    }
+}
+

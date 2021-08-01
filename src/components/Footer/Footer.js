@@ -2,6 +2,8 @@ import React from 'react'
 import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin } from 'react-icons/ai';
 import './Footer.css';
 
+import { NavLink } from 'react-router-dom';
+
 export default function Footer() {
     return (
         <div className='footer-panel'>
@@ -18,7 +20,7 @@ export default function Footer() {
             </div>
             
             <div className='footer-newsletter'>
-                <h3>join our newsletter</h3>
+                <NavLink className = 'newsletter-text' to='/ContactUs'>Join our Newsletter</NavLink>
             </div>
         </div>
     )
