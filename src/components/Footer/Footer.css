@@ -59,13 +59,17 @@
         height: 170px;
     }
 
+    .footer-panel :nth-child(1) { order: 1; }
+    .footer-panel :nth-child(2) { order: 3; }
+    .footer-panel :nth-child(3) { order: 2; }
+
     .footer-socialIcons{
         margin-left: 0;
     }
 
     .footer-newsletter{
         margin-right: 0;
-        margin-bottom: 17px;
+        margin-top: 12px;
     }
 }
 
