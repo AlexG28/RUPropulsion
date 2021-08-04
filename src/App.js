@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 
-import Home from './pages/Home';
-import Mission from './pages/Mission';
-import Events from './pages/Events';
-import TheTeam from './pages/TheTeam';
-import ContactUs from './pages/ContactUs';
-import Blog from './pages/Blog';
+import Home from './pages/Home/Home';
+import Mission from './pages/Mission/Mission';
+import Events from './pages/Events/Events';
+import TheTeam from './pages/TheTeam/TheTeam';
+import ContactUs from './pages/ContactUs/ContactUs';
+import Blog from './pages/Blog/Blog';
 
 import Footer from './components/Footer/Footer';
 
