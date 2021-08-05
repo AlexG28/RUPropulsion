@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React, { useState } from 'react'
+import './Navbar.css'
 import { HiOutlineMenu } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 /* TODO:
     -add social media icons on the hamburger menu
-    -
+    - click anywhere and close the menu
+        - https://www.codingdeft.com/posts/react-on-click-outside/
 */
 
 // https://github.com/briancodex/react-sidebar-v1/tree/master/src/components

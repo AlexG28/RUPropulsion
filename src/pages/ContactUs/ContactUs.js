@@ -4,8 +4,8 @@ import './ContactUs.css'
 function ContactUs () {
 
     return (
-        <div className="contact-us">
-            <form>
+        <div className="contactUs-message">
+            <form className='contactUs-form'>
                 <label>
                     Name:
                     <input type="text" name="name" />
