@@ -1,29 +1,35 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
+
 import './ContactUs.css'
 
+// todo: make it look good 
+// https://freefrontend.com/css-contact-forms/
+// https://react-hook-form.com/
+// make a selection of choices for the topic of message
+// current website: https://rupropulsion.wixsite.com/rpg2020
+
+// amazing tool holy hahahahhahahah
+// https://react-hook-form.com/form-builder/
+
 function ContactUs () {
-
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
+    console.log(errors);
+    
     return (
-        <div className="contactUs-message">
-            <form className='contactUs-form'>
-                <label>
-                    Name:
-                    <input type="text" name="name" />
-                </label>
+        <form className='contactUs-form' onSubmit={handleSubmit(onSubmit)}>
+            <input type="text" placeholder="Full Name" {...register("Full Name", {})} />
+            <input type="email" placeholder="Email" {...register("Email", {})} />
+            <select {...register("Topic")}>
+                <option value="Sponsorship">Sponsorship</option>
+                <option value="Recruitment"> Recruitment</option>
+                <option value="General Inquiry"> General Inquiry</option>
+            </select>
+            <textarea {...register("Message", {})} />
 
-                <label>
-                    Email Address:
-                    <input type="text" name="email" />
-                </label>
-                
-                <textarea>
-                    Message
-                </textarea>
-
-                <input type="submit" value="Submit" />
-
-            </form>
-        </div>
+            <input type="submit" />
+        </form>
     );
 }
 

@@ -1,5 +1,15 @@
 .contactUs-form{
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 350px;
+
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+
+    grid-gap: 20px;
+}
+
+.label1{
+    font-size: 30px;
 }

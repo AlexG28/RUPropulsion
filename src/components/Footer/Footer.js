@@ -1,5 +1,8 @@
 import React from 'react'
-import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineLinkedin } from 'react-icons/ai';
+import { ImLinkedin2 } from 'react-icons/im'
+import { FaFacebook } from 'react-icons/fa'
+import { AiFillInstagram } from 'react-icons/ai'
+
 import './Footer.css';
 
 import { NavLink } from 'react-router-dom';
@@ -8,9 +11,9 @@ export default function Footer() {
     return (
         <div className='footer-panel'>
             <div className="footer-socialIcons">
-                <a href='https://www.facebook.com/rupropulsion/' target='_blank' rel="noreferrer"> <AiOutlineFacebook /> </a>
-                <a href='https://www.instagram.com/rupropulsion/?hl=en' target='_blank' rel="noreferrer">  <AiOutlineInstagram />  </a>
-                <a href='https://www.linkedin.com/company/rupropulsion/mycompany/' target='_blank' rel="noreferrer"> <AiOutlineLinkedin /> </a>
+                <a href='https://www.facebook.com/rupropulsion/' target='_blank' rel="noreferrer"> <FaFacebook /> </a>
+                <a href='https://www.instagram.com/rupropulsion/?hl=en' target='_blank' rel="noreferrer">  <AiFillInstagram />  </a>
+                <a href='https://www.linkedin.com/company/rupropulsion/mycompany/' target='_blank' rel="noreferrer"> <ImLinkedin2 /> </a>
                 
             </div>
             
