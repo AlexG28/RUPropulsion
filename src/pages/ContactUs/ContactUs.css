@@ -10,6 +10,18 @@
     grid-gap: 20px;
 }
 
+.newsLetter-form{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    
+    margin: 0 auto;
+    width: 350px;
+
+    margin-top: 50px;
+}
+
 .label1{
     font-size: 30px;
 }
