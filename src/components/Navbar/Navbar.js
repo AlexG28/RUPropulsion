@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './Navbar.css'
 import { HiOutlineMenu } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -16,14 +16,24 @@ export default function Navbar () {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar); 
     const currentIcon = (b) => {return b ? <AiOutlineClose /> : <HiOutlineMenu />}
+
+    const node = useRef();
+
     
+    useEffect(() => {
+       document.addEventListener("mousedown", (event) => {
+            setSidebar(false);
+        });
+    });
+    
+
     return(
-        <div className="navbar">
+        <div className="navbar" ref={node}>
 
             <h1 className="navbar-title">Ryerson Propulsion Group</h1>
             
             <nav className={ sidebar ? "navbar-items active" : "navbar-items"}>
-                <ul className='navbar-menu' onClick={showSidebar}>
+                <ul className='navbar-menu'>
                     <li><NavLink className='nav-links' to='/'>Home</NavLink></li>
                     <li><NavLink className='nav-links' to='/TheTeam'>The Team</NavLink></li>
                     <li><NavLink className='nav-links' to='/Mission'>Mission</NavLink></li>
