@@ -13,14 +13,13 @@
 .footer-socialIcons{
     margin-left: 4vw;
     display: flex;
-    gap: 2%;
+    gap: 4%;
 }
 
 .footer-socialIcons a{
-    
     display: flex;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .footer-credit{
@@ -65,6 +64,7 @@
 
     .footer-socialIcons{
         margin-left: 0;
+        margin-top: 10px;
     }
 
     .footer-newsletter{

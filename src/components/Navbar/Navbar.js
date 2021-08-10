@@ -18,7 +18,6 @@ export default function Navbar () {
     const currentIcon = (b) => {return b ? <AiOutlineClose /> : <HiOutlineMenu />}
 
     const node = useRef();
-
     
     useEffect(() => {
        document.addEventListener("mousedown", (event) => {
