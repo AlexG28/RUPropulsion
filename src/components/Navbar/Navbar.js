@@ -28,12 +28,14 @@ export default function Navbar () {
         });
     });
     
-    //<h1 className="navbar-title">Ryerson Propulsion Group</h1>
 
     return(
         <div className="navbar" ref={node}>
 
-            <img className='navbar-logo' src = {logoPhoto} alt='logo' />
+            <NavLink to='/'>
+                <img className='navbar-logo' src = {logoPhoto} alt='logo' />
+
+            </NavLink>
             
             <nav className={ sidebar ? "navbar-items active" : "navbar-items"}>
                 <ul className='navbar-menu'>
