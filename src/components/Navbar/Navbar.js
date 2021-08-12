@@ -3,6 +3,9 @@ import './Navbar.css'
 import { HiOutlineMenu } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { NavLink } from 'react-router-dom'
+
+import logoPhoto from './logo-transparent.png';
+
 /* TODO:
     -add social media icons on the hamburger menu
     - click anywhere and close the menu
@@ -25,11 +28,12 @@ export default function Navbar () {
         });
     });
     
+    //<h1 className="navbar-title">Ryerson Propulsion Group</h1>
 
     return(
         <div className="navbar" ref={node}>
 
-            <h1 className="navbar-title">Ryerson Propulsion Group</h1>
+            <img className='navbar-logo' src = {logoPhoto} alt='logo' />
             
             <nav className={ sidebar ? "navbar-items active" : "navbar-items"}>
                 <ul className='navbar-menu'>

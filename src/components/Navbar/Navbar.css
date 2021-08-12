@@ -6,13 +6,14 @@
     background: linear-gradient(356deg, rgba(131,58,180,1) 11%, rgba(255,40,40,1) 50%, rgba(252,176,69,1) 100%);
 }
 
-.navbar-title{
-    color: white;
-    font-size: 35px;
+.navbar-logo{
+    
+    height: 80px;
     margin-left: 4vw;
-    box-sizing: content-box;
     margin-right: 0;
 }
+
+
 
 .navbar-menu{
     position: relative;
