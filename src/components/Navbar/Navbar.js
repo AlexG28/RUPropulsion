@@ -23,11 +23,20 @@ export default function Navbar () {
     const node = useRef();
     
     useEffect(() => {
-       document.addEventListener("mousedown", (event) => {
-            setSidebar(false);
-        });
-    });
-    
+        const checkIfClickedOutside = e => {
+            // If the menu is open and the clicked target is not within the menu,
+            // then close the menu
+            if (sidebar && node.current && !node.current.contains(e.target)) {
+                setSidebar(false)
+            }
+        }
+        document.addEventListener("mousedown", checkIfClickedOutside)
+        return () => {
+            // Cleanup the event listener
+            document.removeEventListener("mousedown", checkIfClickedOutside)
+        }
+    }, [sidebar])
+
 
     return(
         <div className="navbar" ref={node}>
@@ -39,12 +48,12 @@ export default function Navbar () {
             
             <nav className={ sidebar ? "navbar-items active" : "navbar-items"}>
                 <ul className='navbar-menu'>
-                    <li><NavLink className='nav-links' to='/'>Home</NavLink></li>
-                    <li><NavLink className='nav-links' to='/TheTeam'>The Team</NavLink></li>
-                    <li><NavLink className='nav-links' to='/Mission'>Mission</NavLink></li>
-                    <li><NavLink className='nav-links' to='/Events'>Events</NavLink></li>
-                    <li><NavLink className='nav-links' to='/Blog'>Blog</NavLink></li>
-                    <li><NavLink className='nav-links' to='/ContactUs'>Contact Us</NavLink></li>
+                    <li><NavLink className='nav-links' to='/' onClick={showSidebar}>Home</NavLink></li>
+                    <li><NavLink className='nav-links' to='/TheTeam' onClick={showSidebar}>The Team</NavLink></li>
+                    <li><NavLink className='nav-links' to='/Mission' onClick={showSidebar}>Mission</NavLink></li>
+                    <li><NavLink className='nav-links' to='/Events' onClick={showSidebar}>Events</NavLink></li>
+                    <li><NavLink className='nav-links' to='/Blog' onClick={showSidebar}>Blog</NavLink></li>
+                    <li><NavLink className='nav-links' to='/ContactUs' onClick={showSidebar}>Contact Us</NavLink></li>
                 </ul>
             </nav>
         

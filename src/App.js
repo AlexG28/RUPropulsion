@@ -12,8 +12,6 @@ import Blog from './pages/Blog/Blog';
 
 import Footer from './components/Footer/Footer';
 
-// footer will go under </Router>
-
 export default function App() {
   return (
     <div className="App">

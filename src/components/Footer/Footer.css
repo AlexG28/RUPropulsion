@@ -51,6 +51,10 @@
     font-size: 20px;
 }
 
+.instagram_icon a{
+    font-size: 45px;
+}
+
 @media screen and (max-width: 800px) {
     .footer-panel{
         display: flex;
