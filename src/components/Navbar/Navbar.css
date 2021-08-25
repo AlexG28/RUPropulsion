@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background: linear-gradient(356deg, rgba(131,58,180,1) 11%, rgba(255,40,40,1) 50%, rgba(252,176,69,1) 100%);
+    background:rgb(178, 172, 136);
 }
 
 .navbar-logo{

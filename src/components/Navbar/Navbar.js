@@ -43,7 +43,6 @@ export default function Navbar () {
 
             <NavLink to='/'>
                 <img className='navbar-logo' src = {logoPhoto} alt='logo' />
-
             </NavLink>
             
             <nav className={ sidebar ? "navbar-items active" : "navbar-items"}>
