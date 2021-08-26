@@ -10,11 +10,15 @@ function Home () {
     return (
         <div className="home">
             
-            <p className="main-text"> Ryerson <br></br>   Propulsion <br></br> Group </p>
+            <div className="main-text">
+                <p> RYERSON </p>
+                <p> PROPULSION </p>
+                <p> GROUP </p>
+            </div>
 
             <div className = 'summary'>
-                <p>Fueling our future</p>
-                <p>
+                <p className = 'summary-title'> Fueling our future</p>
+                <p className = 'summary-paragraph'>
                     Ryerson Propulsion group is a <br></br>
                     student deisng team aiming to design, build<br></br>
                     and test a liquid bipropellant rocket engine.<br></br>

@@ -32,7 +32,8 @@
 }
 
 .nav-links:hover{
-    background-color: purple;
+    background-color: white;
+    color: black;
     border-radius: 4px;
     transition: all 200ms ease;
 }
@@ -58,9 +59,9 @@
     }
 
     .navbar-items {
-        background-color: purple;
+        background-color: rgb(98, 116, 104);
         width: 350px;
-        height: 600px;
+        height: 350px;
         display: flex;
         justify-content: center;
         position: fixed;
@@ -88,5 +89,12 @@
         color: white;
         margin-top: 10px;
         font-size: 20px;
+    }
+
+    .nav-links:hover{
+        background-color: white;
+        color: black;
+        border-radius: 4px;
+        transition: all 200ms ease;
     }
 }

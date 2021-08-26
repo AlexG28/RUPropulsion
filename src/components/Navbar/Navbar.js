@@ -37,11 +37,16 @@ export default function Navbar () {
         }
     }, [sidebar])
 
+    let closeHamburgerMenu = () => {
+        if (sidebar === true){
+            setSidebar(false)
+        }
+    }
 
     return(
         <div className="navbar" ref={node}>
 
-            <NavLink to='/'>
+            <NavLink to='/' onClick = {closeHamburgerMenu}>
                 <img className='navbar-logo' src = {logoPhoto} alt='logo' />
             </NavLink>
             
