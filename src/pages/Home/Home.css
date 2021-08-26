@@ -1,8 +1,13 @@
-.text{
+.home{
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: calc(100vh - 160px);
+}
+.main-text{
     font-size: 70px;
-    color: orange;
+    color: white;
 
- 
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-top: 0px;
+    margin: auto;
+    width: 50%;
 }
