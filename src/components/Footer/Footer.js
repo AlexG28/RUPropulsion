@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
             
             <div className='footer-credit'>
-                <h5 className ='footer-rights'>All rights reserved | 2018-2021 RPG</h5>
+                <h5 className ='footer-rights'>© 2021 RPG: Ryerson Propulsion Group</h5>
                 <h5 className ='credit'>Website by Alex, Carole and Arib</h5>
             </div>
             

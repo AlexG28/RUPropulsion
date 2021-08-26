@@ -6,6 +6,11 @@ import { NavLink } from 'react-router-dom'
 
 import logoPhoto from './logo-transparent.png';
 
+// important colours:
+// yellow: #F3BD11
+// teal:  
+
+
 /* TODO:
     -add social media icons on the hamburger menu
     - click anywhere and close the menu
