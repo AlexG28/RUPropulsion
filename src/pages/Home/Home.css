@@ -4,10 +4,29 @@
     height: calc(100vh - 160px);
 }
 .main-text{
-    font-size: 70px;
+    font-size: 50px;
     color: white;
-
+    font-weight: bold;
     margin-top: 0px;
-    margin: auto;
-    width: 50%;
+    
+    margin-left: 6%;
+    width: 30%;
 }
+
+.main-text p::first-letter{
+    color: rgb(31, 241, 241);
+}
+
+.main-text p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.quote{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 400px;
+    font-weight: bold;
+}
+

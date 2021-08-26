@@ -6,6 +6,11 @@ import { NavLink } from 'react-router-dom'
 
 import logoPhoto from './logo-transparent.png';
 
+// important colours:
+// yellow: #F3BD11
+// teal:  
+
+
 /* TODO:
     -add social media icons on the hamburger menu
     - click anywhere and close the menu
@@ -37,11 +42,16 @@ export default function Navbar () {
         }
     }, [sidebar])
 
+    let closeHamburgerMenu = () => {
+        if (sidebar === true){
+            setSidebar(false)
+        }
+    }
 
     return(
         <div className="navbar" ref={node}>
 
-            <NavLink to='/'>
+            <NavLink to='/' onClick = {closeHamburgerMenu}>
                 <img className='navbar-logo' src = {logoPhoto} alt='logo' />
             </NavLink>
             
