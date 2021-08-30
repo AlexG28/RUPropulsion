@@ -21,18 +21,20 @@ export default function ContactUs () {
         <div>
 
             <form className='contactUs-form' onSubmit={handleSubmit(onSubmit)}>
-                <input type="text" placeholder="Full Name" {...register("Full Name", {})} />
-                <input type="email" placeholder="Email" {...register("Email", {})} />
-                <select {...register("Topic")}>
+                <input className='nameInput' type="text" placeholder="Full Name" {...register("Full Name", {})} />
+                <input className='emailInput' type="email" placeholder="Email" {...register("Email", {})} />
+                
+                <select className='selectTopic' {...register("Topic")}>
                     <option value="Sponsorship">Sponsorship</option>
                     <option value="Recruitment"> Recruitment</option>
                     <option value="General Inquiry"> General Inquiry</option>
                 </select>
-                <textarea {...register("Message", {})}>
+                
+                <textarea className='messageInput' {...register("Message", {})}>
                     Message
                 </textarea>
     
-                <input type="submit" value='Submit' />
+                <input className='submitButton' type="submit" value='Submit' />
             </form>
             <NewsLetter />
         </div>
