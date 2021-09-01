@@ -2,7 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import NewsLetter from '../ContactUs/Newsletter';
 import './ContactUs.css'
-
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 // todo: make it look good 
 // https://freefrontend.com/css-contact-forms/
 // https://react-hook-form.com/
@@ -18,30 +19,34 @@ export default function ContactUs () {
     console.log(errors);
     
     return (
-        <div>
-            <div className='pageTitle' >
-                <h3 className='pageTitleText' >Contact us</h3>
-                <p>For all inquiries, please contact us with the form below</p>
-            </div>
+        <>
+            <Navbar />
+            <div>
+                <div className='pageTitle' >
+                    <h3 className='pageTitleText' >Contact us</h3>
+                    <p>For all inquiries, please contact us with the form below</p>
+                </div>
 
-            <form className='contactUs-form' onSubmit={handleSubmit(onSubmit)}>
-                <input className='nameInput' type="text" placeholder="Full Name" {...register("Full Name", {})} />
-                <input className='emailInput' type="email" placeholder="Email" {...register("Email", {})} />
-                
-                <select className='selectTopic' {...register("Topic")}>
-                    <option value="Sponsorship">Sponsorship</option>
-                    <option value="Recruitment"> Recruitment</option>
-                    <option value="General Inquiry"> General Inquiry</option>
-                </select>
-                
-                <textarea className='messageInput' {...register("Message", {})}>
-                    Message
-                </textarea>
-    
-                <input className='submitButton' type="submit" value='Submit' />
-            </form>
-            <NewsLetter />
-        </div>
+                <form className='contactUs-form' onSubmit={handleSubmit(onSubmit)}>
+                    <input className='nameInput' type="text" placeholder="Full Name" {...register("Full Name", {})} />
+                    <input className='emailInput' type="email" placeholder="Email" {...register("Email", {})} />
+                    
+                    <select className='selectTopic' {...register("Topic")}>
+                        <option value="Sponsorship">Sponsorship</option>
+                        <option value="Recruitment"> Recruitment</option>
+                        <option value="General Inquiry"> General Inquiry</option>
+                    </select>
+                    
+                    <textarea className='messageInput' {...register("Message", {})}>
+                        Message
+                    </textarea>
+        
+                    <input className='submitButton' type="submit" value='Submit' />
+                </form>
+                <NewsLetter />
+            </div>
+            <Footer />
+        </>
     );
 }
 
