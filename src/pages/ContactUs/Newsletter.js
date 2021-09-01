@@ -9,10 +9,13 @@ export default function NewsLetter() {
   console.log(errors);
   
   return (
-    <form className='newsLetter-form' onSubmit={handleSubmit(onSubmit)}>
-      <input type="email" placeholder="Newsletter Email" {...register("Email", {})} />
+    <div className='newsletterForm' >
+      <h3 className='newsletterTitle'>Subscribe to our newsletter</h3>
+      <form className='newsLetter-form' onSubmit={handleSubmit(onSubmit)}>
+        <input type="email" placeholder="Newsletter Email" {...register("Email", {})} />
 
-      <input type="submit" value='Submit email' />
-    </form>
+        <input type="submit" value='Submit email' />
+      </form>
+    </div>
   );
 }

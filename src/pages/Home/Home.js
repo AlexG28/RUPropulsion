@@ -15,11 +15,6 @@ function Home () {
                 <p> PROPULSION </p>
                 <p> GROUP </p>
             </div>
-
-            <div className = 'quote'>
-                <p>“ad astra” - <br></br>
-                To the Stars!</p>
-            </div>
         </div>
     );
 }

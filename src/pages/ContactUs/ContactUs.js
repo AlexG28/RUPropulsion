@@ -19,6 +19,10 @@ export default function ContactUs () {
     
     return (
         <div>
+            <div className='pageTitle' >
+                <h3 className='pageTitleText' >Contact us</h3>
+                <p>For all inquiries, please contact us with the form below</p>
+            </div>
 
             <form className='contactUs-form' onSubmit={handleSubmit(onSubmit)}>
                 <input className='nameInput' type="text" placeholder="Full Name" {...register("Full Name", {})} />

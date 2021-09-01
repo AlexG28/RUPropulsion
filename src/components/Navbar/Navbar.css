@@ -61,6 +61,7 @@
     .navbar-items {
         background-color: rgb(204, 170, 133);
         width: 350px;
+        border-bottom-left-radius: 30px;
         height: 350px;
         display: flex;
         justify-content: center;

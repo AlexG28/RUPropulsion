@@ -1,3 +1,16 @@
+.pageTitle{
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.pageTitleText{
+    font-size: 30px;
+    text-align: center;
+}
+
+
 .contactUs-form{
     display: flex;
     flex-direction: column;
@@ -11,17 +24,7 @@
     background-color: beige;
 }
 
-.newsLetter-form{ /* move this to a separate file */
-    display: flex;
-    flex-direction: row;
 
-    justify-content: center;
-    
-    margin: 0 auto;
-    width: 350px;
-
-    margin-top: 50px;
-}
 
 .nameInput{
     border: none;
@@ -64,4 +67,25 @@
     font-size: 20px;
     background-color: beige;
     border: 2px solid black;
+}
+
+/* newsletter news letter */
+
+.newsletterForm{
+    margin-top: 30px;
+}
+
+.newsletterTitle{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsLetter-form{ /* move this to a separate file */
+    display: flex;
+    flex-direction: row;
+    grid-gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
 }
