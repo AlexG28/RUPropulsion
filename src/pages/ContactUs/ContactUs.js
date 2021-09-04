@@ -21,7 +21,7 @@ export default function ContactUs () {
     return (
         <>
             <Navbar />
-            <div>
+            <div className = 'page' >
                 <div className='pageTitle' >
                     <h3 className='pageTitleText' >Contact us</h3>
                     <p>For all inquiries, please contact us with the form below</p>
