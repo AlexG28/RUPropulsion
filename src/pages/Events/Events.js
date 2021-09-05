@@ -9,7 +9,7 @@ function Events () {
     return (
         <>
             <Navbar />
-            <div className="events">
+            <div className="events-page">
                 <h1>Events</h1>
                 <p className='test'>this is some text</p>
             </div>
