@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom'
 // TODO: 
 // - add a picture 
 
+// hover animation: https://www.google.com/search?client=firefox-b-d&q=css+underline+text+on+hover
+
 function Home () {
 
     return (

@@ -23,13 +23,19 @@
 }
 
 .linkToMission{
-    display:flex;
+    display: block;
     text-decoration: none;
     color: white;
     font-size: 30px;
     text-align: center;
- 
+
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+
+
     -webkit-transition: color 0.4s;
+    
 }
 
 .linkToMission:hover{
