@@ -14,7 +14,7 @@ export default function NewsLetter() {
       <form className='newsLetter-form' onSubmit={handleSubmit(onSubmit)}>
         <input type="email" placeholder="Newsletter Email" {...register("Email", {})} />
 
-        <input type="submit" value='Submit email' />
+        <input className="submit-button" type="submit" value='Submit email' />
       </form>
     </div>
   );
